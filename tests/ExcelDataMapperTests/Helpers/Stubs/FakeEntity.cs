@@ -36,11 +36,11 @@ public class FakeEntity
 
     /// <summary> Gets or sets the unparsable. </summary>
     /// <remarks>Although techinically parsable, <see cref="TimeSpan"/> is not in our allowed list.</remarks>
-    public TimeSpan Unparsable { get; set; } = new();
+    public TimeSpan Unparsable { get; set; } = default;
 
     /// <summary> Gets or sets the nullable unparsable. </summary>
     /// <remarks>Although techinically parsable, <see cref="TimeSpan"/> is not in our allowed list.</remarks>
-    public TimeSpan? NullableUnparsable { get; set; } = new();
+    public TimeSpan? NullableUnparsable { get; set; } = default;
 
     /// <summary> Gets or sets the created date. </summary>
     public DateTimeOffset? CreatedDate { get; set; }
